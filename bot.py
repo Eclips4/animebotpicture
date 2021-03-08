@@ -48,7 +48,7 @@ async def send_anime(message: types.Message):
                 message.chat.id,
                 i
             )
-        await asyncio.sleep(180)
+        await asyncio.sleep(1500)
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
