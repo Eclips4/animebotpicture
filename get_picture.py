@@ -33,7 +33,6 @@ class Picture:
             link = i.__str__()[
                i.__str__().find('src="') + 5:i.__str__().find(' ', i.__str__().find('src="')) - 1]
             self.images.append(link)
-        for _ in self.images:
-            if 'class' in _.__str__():
-                self.images.remove(_)
+        self.images = list(filter(lambda x: "comment" not in x, self.images))
+        self.images = list(filter(lambda x: "class" not in x, self.images))
         return self.images
