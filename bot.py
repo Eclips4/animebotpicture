@@ -19,7 +19,7 @@ async def send_anime(message: types.Message):
                     i
                 )
                 print('send', i)
-            await asyncio.sleep(100)
+            await asyncio.sleep(1600)
         except:
             await asyncio.sleep(1)
 
