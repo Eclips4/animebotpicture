@@ -3,7 +3,7 @@ import asyncio
 from get_picture import Picture
 from aiogram import Bot, Dispatcher, executor, types
 
-bot = Bot(token="ENTER_YOUR_TOKEN")  # 1632180424:AAHiioPQ0uCxSi-p4sQ5MoHtiEc0Gsiw3Dk
+bot = Bot(token="ENTER_YOUR_TOKEN")
 dp = Dispatcher(bot)
 logging.basicConfig(level=logging.INFO)
 
